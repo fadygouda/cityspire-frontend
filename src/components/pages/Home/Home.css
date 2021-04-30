@@ -1,0 +1,386 @@
+/* Color Palette
+"name":"Black Chocolate","hex":"0C1101",
+"name":"Satin Sheen Gold","hex":"CC9F34",
+"name":"Lavender Gray","hex":"C5C0CE",
+"name":"Prussian Blue","hex":"01336E",
+"name":"Umber","hex":"726355",
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Header styles */
+
+.logo {
+  filter: invert(100%) saturate(220%);
+}
+
+.mapText {
+  color: white;
+  font-family: 'Barlow', sans-serif;
+}
+
+.mapText:hover {
+  color: gold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 15px;
+}
+
+.login {
+  cursor: pointer;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  font-weight: bold;
+}
+
+.login:hover {
+  color: gold;
+  border-bottom: 2px solid gold;
+  padding-bottom: 15px;
+}
+
+.userName {
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.userName:hover {
+  color: gold;
+}
+
+.search {
+  width: 35vw;
+  margin-left: 50px;
+  min-width: 20rem;
+  max-width: 60rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.search:focus {
+  border: 2px solid gold;
+}
+
+
+
+         
+/* Hero Image Styles */
+
+.btn-grad {background-image: linear-gradient(to right, #01336E 0%, #CC9F34  51%, #0C1101  100%)}
+.btn-grad {
+   /* margin: 0 auto; */
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   position: absolute;
+   top: 350px;
+   left: 850px;
+   cursor: pointer;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; 
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+ @media screen and (min-width: 1366px) {
+  .btn-grad {
+    top: 340px;
+    left: 550px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .btn-grad {
+    left: 610px;
+  }
+}
+
+
+
+@media screen and (min-width: 1536px) {
+  .btn-grad {
+    left: 650px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .btn-grad {
+    left: 850px;
+  }
+}
+
+
+.downArrow {
+  text-align: center;
+  margin: 8% 0;
+  top: 350px;
+  left: 940px;
+  position: absolute;
+  filter: invert(100%);
+}
+
+@media screen and (min-width: 1366px) {
+  .downArrow {
+    top: 400px;
+    left: 640px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .downArrow {
+    top: 380px;
+    left: 700px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .downArrow {
+    left: 740px;
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  .downArrow {
+    left: 940px;
+    top: 350px;
+  }
+}
+
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+
+
+/* About Section Styles */
+
+ .headerContainer{
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/imgs/Pattern1.png');
+    background-size: contain;
+    margin-top: -5px;
+  
+  }
+
+ .header {
+   margin: auto;
+   padding-bottom: 20px;
+   width: 50vw;
+   height: 30vh;
+   line-height: 20px;
+   color:rgba(0, 0, 0, 0.63);
+   font-family: 'Poppins', sans-serif;
+   position: relative;
+   letter-spacing: .2rem;
+ }
+
+ @media screen and (max-width: 1370px) {
+   .header {
+     height: 40vh;
+   }
+ }
+
+ .perfect {
+   font-size: 50px;
+   width: 100%;
+   color: #01336E;
+   font-weight: bold;
+   padding-top: 60px;
+   font-family: 'Barlow', sans-serif;
+ }
+
+ @media screen and (min-width: 1366px) {
+   .perfect {
+     font-size: 28px;
+   }
+ }
+
+ @media screen and (min-width: 1400px) {
+   .perfect {
+     font-size: 32px;
+   }
+ }
+
+
+ @media screen and (min-width: 1920px) {
+  .perfect {
+    font-size: 43px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Fade in util component styles */
+
+ .fade-in-section {
+    opacity: 0;
+    transform: translateY(30vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out,
+      visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+
+  /* Card styles */
+
+
+  .cardsContainer {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/imgs/Pattern3.png');
+    background-size: contain;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    box-shadow: 0px 5px 15px black;
+  }
+
+  .card {
+    left: 150px;
+  }
+
+  @media screen and (max-width: 1370px) {
+    .card {
+      left: 40px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .card {
+      left: 55px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .card {
+      left: 150px;
+    }
+  }
+
+  @media screen and (min-width: 1536px) {
+    .card {
+      left: 75px;
+    }
+  }
+
+
+
+  /* Modal styles */
+
+  .modal {
+    align-items: center;
+    justify-items: center;
+    width: 430px;
+    position: absolute;
+    background-color: lightgrey;
+    border: 2px solid #000;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 15px #000;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: url('../../../assets/imgs/Pattern1.png');
+    background-size: contain;
+  }
+
+ 
+
+  .modalText {
+    color: black;
+    font-family: 'Barlow', sans-serif;
+    font-size: 17px;
+  }
+
+  .modalText:hover {
+    color: #01336E;
+    font-weight: bold;
+  }
+
+
+
+
+
